@@ -1,7 +1,9 @@
 export default function Education() {
   return (
     <section>
-      <h1 className="mt-12 text-lg font-bold text-blue-500">Education</h1>
+      <h1 className="mt-12 text-lg font-bold text-blue-500 dark:text-blue-300">
+        Education
+      </h1>
       <ul>
         <li>
           <h3 className="mt-3 text-sm font-bold dark:text-gray-200">

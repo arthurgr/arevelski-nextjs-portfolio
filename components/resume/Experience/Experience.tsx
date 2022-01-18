@@ -38,7 +38,9 @@ const config = [
 export default function Experience() {
   return (
     <section>
-      <h1 className="text-lg font-bold text-blue-500">Experience</h1>
+      <h1 className="text-lg font-bold text-blue-500 dark:text-blue-300">
+        Experience
+      </h1>
       <ul>
         {config.map((e) => {
           return <ExperienceItem key={e.title} config={e} />;

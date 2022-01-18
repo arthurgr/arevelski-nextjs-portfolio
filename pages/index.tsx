@@ -21,8 +21,8 @@ const Home: NextPage = () => {
         <Experience />
         <Education />
         <Skills />
-        <div className="text-blue-500">
-          <h1 className="mt-12 text-lg font-bold text-blue-500">Contact</h1>
+        <div className="text-blue-500 dark:text-blue-300">
+          <h1 className="mt-12 text-lg font-bold">Contact</h1>
           <Links />
         </div>
       </main>
