@@ -2,18 +2,22 @@ const config = [
   {
     href: "mailto:arevelski@gmail.com",
     title: "Email Arthur",
+    target: "_self",
   },
   {
     href: "https://www.linkedin.com/in/arthur-revelski-75894054/",
     title: "LinkedIn",
+    target: "_blank",
   },
   {
     href: "https://github.com/arthurgr",
     title: "Github",
+    target: "_blank",
   },
   {
     href: "https://dribbble.com/arthurrevelski",
     title: "Dribble",
+    target: "_blank",
   },
   {
     href: "Arthur_Revelski_Resume.docx",
@@ -32,7 +36,7 @@ export default function Links() {
                 href={e.href}
                 title={e.title}
                 rel="noopener noreferrer"
-                target="_blank"
+                target={e.target}
               >
                 <b>{e.title}</b>
               </a>

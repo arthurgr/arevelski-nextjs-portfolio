@@ -4,6 +4,7 @@ export default function ThemeToggle(props: {
     setTheme: (e: string) => void;
   };
 }) {
+  const { theme, setTheme } = props.config;
   return (
     <div className="form-check form-switch float-right">
       <label htmlFor="toggleB" className="flex items-center cursor-pointer">
@@ -13,20 +14,20 @@ export default function ThemeToggle(props: {
             id="toggleB"
             className="sr-only"
             onChange={() => {
-              if (props.config.theme === "dark") {
-                props.config.setTheme("light");
+              if (theme === "dark") {
+                setTheme("light");
               } else {
-                props.config.setTheme("dark");
+                setTheme("dark");
               }
             }}
           />
           <div
             className={`w-14 h-8 rounded-full ${
-              props.config.theme === "dark" ? "bg-gray-200 " : "bg-gray-700 "
+              theme === "dark" ? "bg-gray-600 " : "bg-gray-400 "
             }`}
           ></div>
           <div className="dot absolute left-1 top-1  w-6 h-6 rounded-full transition">
-            {props.config.theme === "dark" ? "🌞" : "🌝"}
+            {theme === "dark" ? "🌞" : "🌝"}
           </div>
         </div>
       </label>
