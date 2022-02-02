@@ -33,7 +33,7 @@ export default function Header() {
           </h1>
           <h2 className="mt-1 text-sm font-normal text-white">UI Engineer</h2>
           <h2 className="mt-1 text-sm font-normal text-white">Lakewood, CO</h2>
-          <p className="my-6 text-sm font-light text-gray-200">
+          <p className="my-6 text-sm font-light text-gray-200 dark:text-gray-300">
             I’m passionate about designing and developing intuitive user
             interfaces. When I&apos;m not learning about Javascript, I enjoy
             trying out new recipes, exploring the Colorado mountains, and

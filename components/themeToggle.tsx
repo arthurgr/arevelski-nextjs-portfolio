@@ -26,7 +26,7 @@ export default function ThemeToggle(props: {
               theme === "dark" ? "bg-gray-600 " : "bg-gray-400 "
             }`}
           ></div>
-          <div className="dot absolute left-1 top-1  w-6 h-6 rounded-full transition">
+          <div className="dot absolute left-1 top-0 w-6 h-6 rounded-full transition text-2xl">
             {theme === "dark" ? "🌞" : "🌝"}
           </div>
         </div>

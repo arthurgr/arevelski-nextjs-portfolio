@@ -20,6 +20,10 @@
   background-position: top;
 }
 
+.dark .animated-bg {
+  background-image: url(../public/images/bgDark.jpg);
+}
+
 * {
   box-sizing: border-box;
 }
