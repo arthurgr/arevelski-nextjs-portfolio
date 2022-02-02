@@ -24,7 +24,7 @@ export default function Layout({
       <Header />
       <div
         id="content"
-        className="lg:w-8/12 md:w-12/12 py-12 px-24 float-right dark:bg-zinc-900"
+        className="lg:w-8/12 md:w-12/12 px-16 sm:px-24 py-12 float-right dark:bg-zinc-900"
       >
         <ThemeToggle config={{ theme, setTheme }} />
         {children}

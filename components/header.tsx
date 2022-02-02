@@ -20,7 +20,7 @@ export default function Header() {
       className="flex items-center overflow-hidden lg:min-h-full  md:float-none lg:fixed relative bg-blue-700 lg:w-4/12 md:w-12/12"
     >
       <div id="top" className="py-4 relative z-10">
-        <div className="inside w-fit mx-auto px-24 py-12">
+        <div className="inside w-fit mx-auto px-16 sm:px-24 py-12">
           <Image
             src="/images/photo.jpg"
             height={96}
