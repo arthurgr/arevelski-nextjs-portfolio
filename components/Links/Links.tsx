@@ -1,10 +1,5 @@
 const config = [
   {
-    href: "mailto:arevelski@gmail.com",
-    title: "Email Arthur",
-    target: "_self",
-  },
-  {
     href: "https://www.linkedin.com/in/arthur-revelski-75894054/",
     title: "LinkedIn",
     target: "_blank",
@@ -18,10 +13,6 @@ const config = [
     href: "https://dribbble.com/arthurrevelski",
     title: "Dribble",
     target: "_blank",
-  },
-  {
-    href: "Arthur_Revelski_Resume.docx",
-    title: "Resume",
   },
 ];
 
