@@ -7,7 +7,7 @@ const config = [
     location: "Boulder, CO",
     time: "July 2021 - Present",
     description:
-      "Defined UI architectural specifications and system requirements. Established team processes, best practices, and provide technical leadership to junior developers. Design, develop, and maintain GUI's for online software.",
+      "Design, develop, and maintain K-12 cloud monitoring software. Define UI architectural specifications and system requirements. Establish team processes, best practices, and provide technical leadership to junior developers.",
   },
   {
     position: "UI/UX Front-End Developer",
