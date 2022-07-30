@@ -6,11 +6,10 @@ const config = [
     items: [
       "Typescript",
       "React",
-      "Redux",
-      "Redux Saga",
-      "React Query",
-      "Node",
+      "Next JS",
       "Webpack",
+      "Redux / Sagas",
+      "Node",
       "Jest",
       "Storybook",
     ],
@@ -49,7 +48,7 @@ export default function Skills() {
   return (
     <section>
       <h1 className="mt-12 text-lg font-bold text-blue-500 dark:text-blue-300">
-        Skills
+        Technology
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-6 gap-4">
         {config.map((e) => {

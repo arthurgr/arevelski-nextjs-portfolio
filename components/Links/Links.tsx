@@ -14,6 +14,11 @@ const config = [
     title: "Dribble",
     target: "_blank",
   },
+  {
+    href: "https://www.artiro.io/",
+    title: "Consulting",
+    target: "_blank",
+  },
 ];
 
 export default function Links() {
