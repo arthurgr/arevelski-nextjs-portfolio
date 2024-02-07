@@ -3,6 +3,7 @@ import Link from "next/link";
 import Header from "./header";
 import ThemeToggle from "./themeToggle";
 import { useState } from "react";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const siteTitle = "Arthur Revelski";
 
@@ -18,7 +19,7 @@ export default function Layout({
     <div className={theme}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="Arthur Revelski Portfolio Website" />
+        <meta name="description" content="Arthur Revelski" />
         <meta name="og:title" content={siteTitle} />
       </Head>
       <Header />

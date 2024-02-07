@@ -5,6 +5,7 @@ import Experience from "../components/resume/Experience/Experience";
 import Education from "../components/resume/Education";
 import Skills from "../components/resume/Skills/Skills";
 import Links from "../components/Links/Links";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 
 const Home: NextPage = () => {
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
           <Links />
         </div>
       </main>
+        <GoogleAnalytics gaId="G-E1F12C8Q41" />
     </Layout>
   );
 };
