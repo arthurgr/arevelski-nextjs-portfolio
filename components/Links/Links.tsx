@@ -1,3 +1,5 @@
+import { sendGAEvent } from '@next/third-parties/google'
+
 const config = [
   {
     href: "https://www.linkedin.com/in/arthur-revelski-75894054/",
@@ -27,16 +29,21 @@ export default function Links() {
       <ul className="mt-3 text-sm font-normal">
         {config.map((e) => {
           return (
-            <li key={e.title} className="mt-1 hover:underline">
-              <a
-                href={e.href}
-                title={e.title}
-                rel="noopener noreferrer"
-                target={e.target}
-              >
-                <b>{e.title}</b>
-              </a>
-            </li>
+              <li key={e.title} className="mt-1 hover:underline">
+                <b>
+                  <a
+                      href={e.href}
+                      title={e.title}
+                      rel="noopener noreferrer"
+                      target={e.target}
+                      onClick={(e) => {
+                        sendGAEvent({ event: 'buttonClicked', value: 'social link clicked' })
+                      }}
+                  >
+                    {e.title}
+                  </a>
+                </b>
+              </li>
           );
         })}
       </ul>
