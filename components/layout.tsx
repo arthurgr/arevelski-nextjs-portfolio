@@ -4,7 +4,7 @@ import Header from "./header";
 import ThemeToggle from "./themeToggle";
 import { useState } from "react";
 
-export const siteTitle = "Arthur Revelski Portfolio Website";
+export const siteTitle = "Arthur Revelski";
 
 export default function Layout({
   children,
