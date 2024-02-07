@@ -5,9 +5,7 @@ import Experience from "../components/resume/Experience/Experience";
 import Education from "../components/resume/Education";
 import Skills from "../components/resume/Skills/Skills";
 import Links from "../components/Links/Links";
-import ReactGA from "react-ga";
 
-ReactGA.initialize("UA-46448219-1");
 
 const Home: NextPage = () => {
   return (
