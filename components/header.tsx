@@ -1,22 +1,9 @@
-import { useSpring, animated } from "react-spring";
 import Image from "next/image";
 import Links from "./Links/Links";
 
 export default function Header() {
-  const calc = (x: number, y: number) => [
-    x - window.innerWidth / 3,
-    y - window.innerHeight / 3,
-  ];
-  const trans1 = (x: number, y: number) =>
-    `translate3d(${x / 30}px,${y / 15}px,0)`;
-  const [props, set] = useSpring(() => ({
-    xy: [0, 0],
-    config: { mass: 10, tension: 550, friction: 140 },
-  }));
-
   return (
     <header
-      onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
       className="flex items-center overflow-hidden lg:min-h-full  md:float-none lg:fixed relative bg-blue-700 lg:w-4/12 md:w-12/12"
     >
       <div id="top" className="py-4 relative z-10">
@@ -44,10 +31,9 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <animated.div
+      <span
         className="animated-bg"
-        style={{ transform: props.xy.interpolate(trans1) }}
-      ></animated.div>
+      ></span>
     </header>
   );
 }
