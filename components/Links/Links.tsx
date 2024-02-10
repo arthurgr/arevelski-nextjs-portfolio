@@ -26,10 +26,10 @@ const config = [
 export default function Links() {
   return (
     <nav>
-      <ul className="mt-3 text-sm font-normal">
+      <ul className="text-sm font-normal">
         {config.map((e) => {
           return (
-              <li key={e.title} className="mt-1 hover:underline">
+              <li key={e.title} className="hover:underline">
                 <b>
                   <a
                       href={e.href}

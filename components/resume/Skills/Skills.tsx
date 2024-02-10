@@ -2,59 +2,60 @@ import { SkillsItem } from "./SkillsItem";
 
 const config = [
   {
-    category: "Javascript",
+    category: "Programming Languages",
+    items: ["TypeScript", "JavaScript (ES6+)", "PHP", "HTML5", "SCSS", "LESS", "CSS"],
+  },
+  {
+    category: "Web Technologies",
     items: [
-      "Typescript",
-      "React",
-      "Next JS",
-      "Webpack",
-      "Redux / Sagas",
-      "Node",
-      "Jest",
-      "Storybook",
+      "React", "Svelte", "Vue", "Next", "React Query", "Zustand", "Redux",
+      "Node", "Nest", "Spring Boot", "MSW", "Sagas", "Recharts", "D3", "Storybook"
     ],
   },
   {
-    category: "Other Languages",
-    items: ["GIT", "PHP", "SCSS", "SASS", "CSS", "Linux", " HTML5"],
+    category: "Database Management",
+    items: [
+      "Postgres",
+      "MySQL",
+    ],
+  },
+  {
+    category: "Testing Frameworks",
+    items: ["Jest", "React Testing Library"],
+  },
+  {
+    category: "Version Control",
+    items: ["Git", "GitHub", "GitLab"],
+  },
+  {
+    category: "Build Tools",
+    items: ["Vite", "Webpack", "Rollup", "Babel"],
+  },
+  {
+    category: "Build Tools",
+    items: ["Vite", "Webpack", "Rollup", "Babel"],
   },
   {
     category: "Design Systems",
-    items: [
-      "Tailwind",
-      "Ant Design",
-      "Bootstrap",
-      "Material UI",
-      "US Design Systems",
-    ],
+    items: ["Tailwind", "Ant Design", "Bootstrap", "Material UI", "US Design Systems"],
   },
   {
-    category: "Design Tools",
-    items: ["Figma", "Adobe XD", "Photoshop", "Illustrator", "Sketch "],
-  },
-  {
-    category: "Application Planning",
-    items: [
-      "Accessibility",
-      "Product Design",
-      "UX Design & Research",
-      "User Interactions",
-      "UI Architecture",
-    ],
+    category: "Other Tools",
+    items: ["Figma", "Adobe XD", "Photoshop", "Illustrator", "Sketch"],
   },
 ];
 
 export default function Skills() {
   return (
-    <section>
-      <h1 className="mt-12 text-lg font-bold text-blue-500 dark:text-blue-300">
+    <>
+      <h1 className="text-lg font-bold text-blue-500 dark:text-blue-300">
         Technical Skills
       </h1>
-      <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-6 gap-4">
+      <div>
         {config.map((e) => {
           return <SkillsItem key={e.category} config={e} />;
         })}
       </div>
-    </section>
+    </>
   );
 }

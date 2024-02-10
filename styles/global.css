@@ -31,24 +31,7 @@
 body.dark {
   background-color: #292c35;
 }
-.checkbox {
-  opacity: 0;
-  position: absolute;
-}
 
-.label {
-  width: 50px;
-  height: 26px;
-  background-color: #111;
-  display: flex;
-  border-radius: 50px;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px;
-  position: relative;
-  transform: scale(1.5);
-  cursor: pointer;
-}
 /* Dark mode btn */
 input:checked ~ .dot {
   transform: translateX(100%);

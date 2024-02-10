@@ -1,7 +1,7 @@
+import React, { useState } from "react";
 import Head from "next/head";
 import Header from "./header";
 import ThemeToggle from "./themeToggle";
-import { useState } from "react";
 
 export const siteTitle = "Arthur Revelski";
 
@@ -14,20 +14,23 @@ export default function Layout({
 }) {
   const [theme, setTheme] = useState("light");
   return (
-    <div className={theme}>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="Arthur Revelski" />
-        <meta name="og:title" content={siteTitle} />
-      </Head>
-      <Header />
-      <div
-        id="content"
-        className="lg:w-8/12 md:w-12/12 px-16 sm:px-24 py-12 float-right dark:bg-zinc-900"
-      >
-        <ThemeToggle config={{ theme, setTheme }} />
-        {children}
-      </div>
-    </div>
+    <>
+        <Head>
+            <title>{siteTitle}</title>
+            <link rel="icon" href="/favicon.ico"/>
+            <meta name="description" content="Arthur Revelski"/>
+            <meta name="og:title" content={siteTitle}/>
+        </Head>
+        <div className={theme}>
+            <Header/>
+            <main
+              id="content"
+              className=" float-right lg:w-8/12 md:w-12/12 py-12 px-16 sm:px-24 dark:bg-zinc-900"
+            >
+                  <ThemeToggle config={{ theme, setTheme }} />
+                  {children}
+            </main>
+        </div>
+    </>
   );
 }
