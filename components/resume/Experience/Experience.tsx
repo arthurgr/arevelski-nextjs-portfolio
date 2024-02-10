@@ -6,32 +6,28 @@ const config = [
     title: "ManagedMethods Inc",
     location: "Boulder, CO",
     time: "July 2021 - Present",
-    description:
-      "Design, develop, and maintain K-12 cloud monitoring software. Define UI architectural specifications and system requirements. Establish team processes, best practices, and provide technical leadership to junior developers.",
+    description: ["Define and enforce UI architectural decisions and project requirements.", "Establish team processes, best practices, and provide technical leadership to junior developers.", "Successfully migrated legacy UI platform to Typescript and React, resulting in improved application efficiency and enhanced experience for both users and developers."],
   },
   {
-    position: "UI/UX Front-End Developer",
+    position: "Front End Engineer",
     title: "Douglas County Schools",
     location: "Castle Rock, CO",
     time: "Dec 2015 - July 2021",
-    description:
-      "Collaborated closely with engineers, stakeholders, and product managers throughout the lifecycle of application planning, design, development, and testing. Determined application or feature success based on stakeholder feedback.",
+    description: ["Audited district applications and ensured compliance with WCAG accessibility standards.", "Advocated and implemented API-first design methodology, resulting in a significant enhancement in the scalability of district applications.", "Implemented integration, unit, and end-to-end tests to enhance code coverage, streamlining workflow efficiency, and instilling developer confidence in making changes affecting multiple applications using Jest and React Testing Library."],
   },
   {
     position: "UI/UX Developer",
     title: "Blackboard Technology and Solutions",
     location: "Denver, CO",
     time: "Oct 2011 - Sept 2015",
-    description:
-      "Generated prototypes and UI deliverables including wireframes, flowcharts, screen mock-ups, and interface specifications. Designed and developed components and features that integrated into multiple Blackboard software platforms.",
+    description: ["Produced prototypes and comprehensive UI deliverables, encompassing wireframes, flowcharts, and screen mock-ups using Figma, Adobe XD, and other design tools.", "Engineered design system components and seamlessly integrated features across diverse Blackboard software platforms.", "Gathered user feedback and integrated it into development changes to enhance the product, ultimately increasing user satisfaction."],
   },
   {
     position: "Front End Designer/Developer",
     title: "SchoolCenter An Edline Solution",
     location: "Carbondale, IL",
     time: "Mar 2008 - Oct 2011",
-    description:
-      "Created and developed wire-frames, mockups, and high fidelity designs based on product managers business requirements. Established branding, media, and website designs for school districts across the U.S. Converted Abobe Flash websites to Responsive HTML alternatives, ensuring that sites could be viewed on all devices.",
+    description: ["Led the development of branding, media, and website designs for school districts nationwide.", "Successfully converted Adobe Flash websites to responsive HTML alternatives, ensuring optimal cross-device compatibility.", "Produced wireframes, mockups, and high-fidelity designs in alignment with customers specifications."],
   },
 ];
 
@@ -41,11 +37,11 @@ export default function Experience() {
       <h1 className="text-lg font-bold text-blue-500 dark:text-blue-300">
         Experience
       </h1>
-      <ul className="lg:max-w-xl">
+      <span className="lg:max-w-xl">
         {config.map((e) => {
           return <ExperienceItem key={e.title} config={e} />;
         })}
-      </ul>
+      </span>
     </section>
   );
 }

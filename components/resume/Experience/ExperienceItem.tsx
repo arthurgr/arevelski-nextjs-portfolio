@@ -4,11 +4,11 @@ export const ExperienceItem = (props: {
     title: string;
     location: string;
     time: string;
-    description: string;
+    description: Array<string>;
   };
 }) => {
   return (
-    <li>
+    <>
       <h3 className="mt-6 font-bold text-gray-700 dark:text-gray-200">
         {props.config.position}
       </h3>
@@ -22,8 +22,8 @@ export const ExperienceItem = (props: {
         {props.config.time}
       </h3>
       <p className="text-sm font-light text-gray-500 mt-1 dark:text-gray-400">
-        {props.config.description}
+        {props.config.description.map((e) => <li key={e}>{e}</li>)}
       </p>
-    </li>
+    </>
   );
 };
