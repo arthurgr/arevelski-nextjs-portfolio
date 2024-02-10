@@ -1,4 +1,4 @@
-export const SkillsItem = (props: {
+export const TechnicalSkillsItem = (props: {
   config: {
     category: string;
     items: Array<string>;

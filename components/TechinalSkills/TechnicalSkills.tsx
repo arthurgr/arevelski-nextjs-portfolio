@@ -1,4 +1,4 @@
-import { SkillsItem } from "./SkillsItem";
+import { TechnicalSkillsItem } from "./TechnicalSkillsItem";
 
 const config = [
   {
@@ -45,7 +45,7 @@ const config = [
   },
 ];
 
-export default function Skills() {
+export default function TechnicalSkills() {
   return (
     <>
       <h1 className="text-lg font-bold text-blue-500 dark:text-blue-300">
@@ -53,7 +53,7 @@ export default function Skills() {
       </h1>
       <div>
         {config.map((e) => {
-          return <SkillsItem key={e.category} config={e} />;
+          return <TechnicalSkillsItem key={e.category} config={e} />;
         })}
       </div>
     </>

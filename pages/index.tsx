@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 import Layout from "../components/layout";
-import Experience from "../components/resume/Experience/Experience";
-import Education from "../components/resume/Education";
-import Skills from "../components/resume/Skills/Skills";
+import Experience from "../components/Experience/Experience";
+import Education from "../components/Education/Education";
+import TechnicalSkills from "../components/TechinalSkills/TechnicalSkills";
 import { GoogleAnalytics } from '@next/third-parties/google'
 
 const index: NextPage = () => {
@@ -13,7 +13,7 @@ const index: NextPage = () => {
                 <Experience/>
             </section>
             <section>
-                <Skills/>
+                <TechnicalSkills/>
             </section>
             <section>
                 <Education/>
