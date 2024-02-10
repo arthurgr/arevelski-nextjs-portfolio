@@ -1,9 +1,7 @@
 import Head from "next/head";
-import Link from "next/link";
 import Header from "./header";
 import ThemeToggle from "./themeToggle";
 import { useState } from "react";
-import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const siteTitle = "Arthur Revelski";
 
@@ -30,13 +28,6 @@ export default function Layout({
         <ThemeToggle config={{ theme, setTheme }} />
         {children}
       </div>
-      {!home && (
-        <div>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
     </div>
   );
 }
