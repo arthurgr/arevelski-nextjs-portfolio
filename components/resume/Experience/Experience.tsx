@@ -2,7 +2,7 @@ import { ExperienceItem } from "./ExperienceItem";
 
 const config = [
   {
-    position: "Lead UI Engineer",
+    position: "Software Engineer",
     title: "ManagedMethods Inc",
     location: "Boulder, CO",
     time: "July 2021 - Present",

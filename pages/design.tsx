@@ -14,7 +14,7 @@ export default function Design() {
             Design Examples
           </h1>
           <h3 className="mt-3 text-sm font-bold text-gray-700">
-            Lead UI Engineer
+            Software Engineer
           </h3>
           <h3 className="text-sm font-semibold text-gray-600">
             ManagedMethods Inc

@@ -2,7 +2,7 @@ import { sendGAEvent } from '@next/third-parties/google'
 
 const config = [
   {
-    href: "https://www.linkedin.com/in/arthur-revelski-75894054/",
+    href: "https://www.linkedin.com/in/arthur-revelski/",
     title: "LinkedIn",
     target: "_blank",
   },

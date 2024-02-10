@@ -18,8 +18,8 @@ const Home: NextPage = () => {
       </Head>
       <main>
         <Experience />
-        <Education />
         <Skills />
+          <Education />
         <div className="text-blue-500 dark:text-blue-300">
           <h1 className="mt-12 text-lg font-bold">Contact</h1>
           <Links />
