@@ -47,15 +47,13 @@ const config = [
 
 export default function TechnicalSkills() {
   return (
-    <>
+  <>
       <h1 className="text-lg font-bold text-blue-500 dark:text-blue-300">
         Technical Skills
       </h1>
-      <div>
-        {config.map((e) => {
-          return <TechnicalSkillsItem key={e.category} config={e} />;
-        })}
-      </div>
-    </>
+      {config.map((e) => {
+        return <TechnicalSkillsItem key={e.category} config={e}/>;
+      })}
+  </>
   );
 }

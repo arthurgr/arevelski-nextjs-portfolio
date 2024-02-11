@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import Header from "./Header/Header";
-import ThemeToggle from "./themeToggle";
+import ThemeToggle from "./Header/themeToggle";
 
 export const siteTitle = "Arthur Revelski";
 

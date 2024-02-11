@@ -8,22 +8,22 @@ export const ExperienceItem = (props: {
   };
 }) => {
   return (
-    <ul className="lg:max-w-xl">
-      <h3 className="font-bold text-gray-700 dark:text-gray-200">
+    <span className="mx-4">
+      <h2 className="font-bold text-gray-700 dark:text-gray-200">
         {props.config.position}
-      </h3>
-      <h3 className="text-sm font-bold dark:text-gray-300">
+      </h2>
+      <h3 className="text-sm font-bold dark:text-gray-200">
         {props.config.title}
       </h3>
-      <h3 className="text-sm font-normal text-gray-500 dark:text-gray-300">
+      <h4 className="text-sm font-normal text-gray-500 dark:text-gray-300">
         {props.config.location}
-      </h3>
-      <h3 className="text-sm font-normal text-gray-500 dark:text-gray-300">
+      </h4>
+      <h5 className="text-sm font-normal text-gray-500 dark:text-gray-300">
         {props.config.time}
-      </h3>
+      </h5>
       <ul className="text-sm font-light text-gray-500 dark:text-gray-400">
         {props.config.description.map((e) => <li key={e}>{e}</li>)}
       </ul>
-    </ul>
+    </span>
   );
 };

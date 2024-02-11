@@ -8,17 +8,15 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 const index: NextPage = () => {
   return (
     <Layout home>
-        <article>
-            <section>
-                <Experience/>
-            </section>
-            <section>
-                <TechnicalSkills/>
-            </section>
-            <section>
-                <Education/>
-            </section>
-        </article>
+        <section className="max-w-xl mb-8">
+            <Experience/>
+        </section>
+        <section className="max-w-xl mb-8">
+        <TechnicalSkills/>
+        </section>
+        <section className="max-w-xl mb-8">
+            <Education/>
+        </section>
         <GoogleAnalytics gaId="G-E1F12C8Q41"/>
     </Layout>
   );

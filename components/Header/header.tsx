@@ -31,9 +31,6 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <span
-        className="animated-bg"
-      ></span>
     </header>
   );
 }
