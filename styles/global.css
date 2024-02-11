@@ -25,3 +25,7 @@ body.dark {
 input:checked ~ .dot {
   transform: translateX(100%);
 }
+
+ul {
+  list-style-type: initial;
+}
