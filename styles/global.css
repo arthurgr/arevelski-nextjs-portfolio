@@ -28,4 +28,5 @@ input:checked ~ .dot {
 
 ul {
   list-style-type: initial;
+  list-style-position: outside;
 }

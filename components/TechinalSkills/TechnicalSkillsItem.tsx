@@ -5,11 +5,11 @@ export const TechnicalSkillsItem = (props: {
   };
 }) => {
   return (
-    <span className="mx-4">
+    <span className="mx-3">
         <h2 className="text-sm font-bold dark:text-gray-200">
             {props.config.category}
         </h2>
-        <ul className="text-sm font-light text-gray-500 dark:text-gray-400">
+        <ul className="text-sm font-light text-gray-500 dark:text-gray-400 list-disc">
             {props.config.items.map((e) => (
                 <li key={e}>{e}</li>
             ))}
