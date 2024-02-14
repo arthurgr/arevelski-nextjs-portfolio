@@ -32,10 +32,6 @@ const config = [
     items: ["Vite", "Webpack", "Rollup", "Babel"],
   },
   {
-    category: "Build Tools",
-    items: ["Vite", "Webpack", "Rollup", "Babel"],
-  },
-  {
     category: "Design Systems",
     items: ["Tailwind", "Ant Design", "Bootstrap", "Material UI", "US Design Systems"],
   },
