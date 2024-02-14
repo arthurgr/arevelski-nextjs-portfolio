@@ -29,7 +29,7 @@ export default function Links() {
       <ul className="text-sm font-normal">
         {config.map((e) => {
           return (
-              <li key={e.title} className="hover:underline">
+              <li key={e.title} className="hover:underline mb-2">
                 <b>
                   <a
                       href={e.href}

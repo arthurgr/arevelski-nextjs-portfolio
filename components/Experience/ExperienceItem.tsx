@@ -21,7 +21,7 @@ export const ExperienceItem = (props: {
       <h5 className="text-sm font-normal text-gray-500 dark:text-gray-300 mb-2">
         {props.config.time}
       </h5>
-      <ul className="text-sm font-light text-gray-500 dark:text-gray-400">
+      <ul className="text-sm font-light text-gray-500 dark:text-gray-400 list-disc">
         {props.config.description.map((e) => <li className="mb-1" key={e}>{e}</li>)}
       </ul>
     </span>

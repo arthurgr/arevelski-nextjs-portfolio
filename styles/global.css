@@ -26,7 +26,7 @@ input:checked ~ .dot {
   transform: translateX(100%);
 }
 
-ul {
-  list-style-type: initial;
-  list-style-position: outside;
-}
+/*ul {*/
+/*  list-style-type: initial;*/
+/*  list-style-position: outside;*/
+/*}*/
