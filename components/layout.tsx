@@ -25,7 +25,7 @@ export default function Layout({
             <Header/>
             <main
               id="content"
-              className=" float-right lg:w-8/12 md:w-12/12 py-12 px-16 sm:px-24 dark:bg-zinc-900"
+              className=" lg:float-right md:float-none lg:w-8/12 md:w-12/12 py-12 px-16 sm:px-24 dark:bg-zinc-900"
             >
                   <ThemeToggle config={{ theme, setTheme }} />
                   {children}
