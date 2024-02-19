@@ -6,7 +6,7 @@ export const TechnicalSkillsItem = ({ props }: { props: { category: string; item
         </h2>
         <ul className="text-sm font-light text-gray-500 dark:text-gray-400">
             {props.items.map((skill, index) => (
-                <li key={skill}>{skill}{}</li>
+                <li key={skill} className="inline-block mr-2 mb-1">{skill}{props.items.length > index + 1  ? "," : "."}</li>
             ))}
         </ul>
     </span>
