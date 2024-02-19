@@ -38,7 +38,7 @@ export default function Experience() {
         Experience
       </h1>
         {config.map((e) => {
-          return <ExperienceItem key={e.title} config={e} />;
+          return <ExperienceItem key={e.title} props={e} />;
         })}
     </>
   );

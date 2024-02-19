@@ -48,7 +48,7 @@ export default function TechnicalSkills() {
         Technical Skills
       </h1>
       {config.map((e) => {
-        return <TechnicalSkillsItem key={e.category} config={e}/>;
+        return <TechnicalSkillsItem key={e.category} props={e}/>;
       })}
   </>
   );
