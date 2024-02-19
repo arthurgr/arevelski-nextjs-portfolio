@@ -1,4 +1,4 @@
-import { sendGAEvent } from '@next/third-parties/google'
+import LinksItem from "./LinksItem";
 
 const config = [
   {
@@ -29,21 +29,7 @@ export default function Links() {
       <ul className="text-sm font-normal">
         {config.map((e) => {
           return (
-              <li key={e.title} className="hover:underline mb-2">
-                <b>
-                  <a
-                      href={e.href}
-                      title={e.title}
-                      rel="noopener noreferrer"
-                      target={e.target}
-                      onClick={(e) => {
-                        sendGAEvent({ event: 'buttonClicked', value: 'social link clicked' })
-                      }}
-                  >
-                    {e.title}
-                  </a>
-                </b>
-              </li>
+              <LinksItem key={e.href} props={e} />
           );
         })}
       </ul>
