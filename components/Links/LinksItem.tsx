@@ -13,10 +13,10 @@ export default function LinksItem({
           title={props.title}
           rel="noopener noreferrer"
           target={props.target}
-          onClick={(e) => {
+          onClick={() => {
             sendGAEvent({
-              event: "buttonClicked",
-              value: "social link clicked",
+              event: "Outgoing Link",
+              value: props.title,
             });
           }}
         >
