@@ -15,22 +15,22 @@ export default function Layout({
   const [theme, setTheme] = useState("light");
   return (
     <>
-        <Head>
-            <title>{siteTitle}</title>
-            <link rel="icon" href="/favicon.ico"/>
-            <meta name="description" content="Arthur Revelski"/>
-            <meta name="og:title" content={siteTitle}/>
-        </Head>
-        <div className={theme}>
-            <Header/>
-            <main
-              id="content"
-              className=" lg:float-right md:float-none lg:w-8/12 md:w-12/12 py-12 px-16 sm:px-24 dark:bg-zinc-900"
-            >
-                  <ThemeToggle config={{ theme, setTheme }} />
-                  {children}
-            </main>
-        </div>
+      <Head>
+        <title>{siteTitle}</title>
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Arthur Revelski" />
+        <meta name="og:title" content={siteTitle} />
+      </Head>
+      <div className={theme}>
+        <Header />
+        <main
+          id="content"
+          className=" lg:float-right md:float-none lg:w-8/12 md:w-12/12 py-12 px-16 sm:px-24 dark:bg-zinc-900"
+        >
+          <ThemeToggle config={{ theme, setTheme }} />
+          {children}
+        </main>
+      </div>
     </>
   );
 }

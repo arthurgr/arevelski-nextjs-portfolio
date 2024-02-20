@@ -3,9 +3,7 @@ import Links from "../Links/Links";
 
 export default function Header() {
   return (
-    <header
-      className="flex items-center overflow-hidden lg:min-h-full  md:float-none lg:fixed relative bg-blue-700 lg:w-4/12 md:w-12/12"
-    >
+    <header className="flex items-center overflow-hidden lg:min-h-full  md:float-none lg:fixed relative bg-blue-700 lg:w-4/12 md:w-12/12">
       <div id="top" className="py-4 relative z-10">
         <div className="inside w-fit mx-auto px-16 sm:px-24 py-12">
           <Image
@@ -18,7 +16,9 @@ export default function Header() {
           <h1 className="mt-1 text-xl font-medium text-white">
             Arthur Revelski
           </h1>
-          <h2 className="mt-1 text-sm font-normal text-white">Software Engineer</h2>
+          <h2 className="mt-1 text-sm font-normal text-white">
+            Software Engineer
+          </h2>
           <h3 className="mt-1 text-sm font-normal text-white">Boulder, CO</h3>
           <p className="my-6 text-sm font-light text-gray-200 dark:text-gray-300">
             I’m passionate about designing and developing intuitive user

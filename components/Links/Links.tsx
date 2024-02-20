@@ -22,15 +22,12 @@ const config = [
     target: "_blank",
   },
 ];
-
 export default function Links() {
   return (
     <nav>
       <ul className="text-sm font-normal">
         {config.map((e) => {
-          return (
-              <LinksItem key={e.href} props={e} />
-          );
+          return <LinksItem key={e.href} props={e} />;
         })}
       </ul>
     </nav>

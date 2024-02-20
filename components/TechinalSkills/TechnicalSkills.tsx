@@ -3,21 +3,39 @@ import { TechnicalSkillsItem } from "./TechnicalSkillsItem";
 const config = [
   {
     category: "Programming Languages",
-    items: ["TypeScript", "JavaScript (ES6+)", "PHP", "HTML5", "SCSS", "LESS", "CSS"],
+    items: [
+      "TypeScript",
+      "JavaScript (ES6+)",
+      "PHP",
+      "HTML5",
+      "SCSS",
+      "LESS",
+      "CSS",
+    ],
   },
   {
     category: "Web Technologies",
     items: [
-      "React", "Svelte", "Vue", "Next", "React Query", "Zustand", "Redux",
-      "Node", "Nest", "Spring Boot", "MSW", "Sagas", "Recharts", "D3", "Storybook"
+      "React",
+      "Svelte",
+      "Vue",
+      "Next",
+      "React Query",
+      "Zustand",
+      "Redux",
+      "Node",
+      "Nest",
+      "Spring Boot",
+      "MSW",
+      "Sagas",
+      "Recharts",
+      "D3",
+      "Storybook",
     ],
   },
   {
     category: "Database Management",
-    items: [
-      "Postgres",
-      "MySQL",
-    ],
+    items: ["Postgres", "MySQL"],
   },
   {
     category: "Testing Frameworks",
@@ -33,7 +51,13 @@ const config = [
   },
   {
     category: "Design Systems",
-    items: ["Tailwind", "Ant Design", "Bootstrap", "Material UI", "US Design Systems"],
+    items: [
+      "Tailwind",
+      "Ant Design",
+      "Bootstrap",
+      "Material UI",
+      "US Design Systems",
+    ],
   },
   {
     category: "Other Tools",
@@ -43,13 +67,13 @@ const config = [
 
 export default function TechnicalSkills() {
   return (
-  <>
+    <>
       <h1 className="text-lg font-bold text-blue-500 dark:text-blue-300">
         Technical Skills
       </h1>
       {config.map((e) => {
-        return <TechnicalSkillsItem key={e.category} props={e}/>;
+        return <TechnicalSkillsItem key={e.category} props={e} />;
       })}
-  </>
+    </>
   );
 }
