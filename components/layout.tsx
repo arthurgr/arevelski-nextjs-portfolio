@@ -20,7 +20,6 @@ export default function Layout({ children }: LayoutProps) {
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Arthur Revelski" />
         <meta name="og:title" content={siteTitle} />
-        <GoogleTagManager gtmId="GTM-MPNWC3" />
       </Head>
       <div className={theme}>
         <Header />
@@ -29,6 +28,7 @@ export default function Layout({ children }: LayoutProps) {
           {children}
         </main>
       </div>
+      <GoogleTagManager gtmId="GTM-MPNWC3" />
     </>
   );
 }
