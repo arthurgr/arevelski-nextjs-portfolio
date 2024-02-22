@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ThemeToggle from "./Header/themeToggle";
 import Header from "./Header/Header";
 import Head from "next/head";
-import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -20,6 +20,7 @@ export default function Layout({ children }: LayoutProps) {
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Arthur Revelski" />
         <meta name="og:title" content={siteTitle} />
+        <GoogleTagManager gtmId="GTM-MPNWC3" />
       </Head>
       <div className={theme}>
         <Header />
@@ -28,8 +29,6 @@ export default function Layout({ children }: LayoutProps) {
           {children}
         </main>
       </div>
-      <GoogleTagManager gtmId="GTM-MPNWC3" />
-      <GoogleAnalytics gaId="G-E1F12C8Q41" />
     </>
   );
 }
